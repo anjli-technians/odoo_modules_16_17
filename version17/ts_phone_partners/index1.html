@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="generator" content="Odoo">
+  <meta name="google-site-verification" content="pgjyH0qvN69B0m_HrTKV6h8TVnbRXp5etEHo19unPy4">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,200;9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap-5.1.3.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+
+
+  <title>Phone Calls linked with Contact | Odoo Apps Store</title>
+</head>
+
+<body class data-odoo-version="new" data-debug-mode>
+  <style>
+    p {
+      color: #36454F;
+      font-family: 'Roboto', serif;
+      font-size: 17px;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .task_img {
+      width: 21px;
+      padding-bottom: 2px;
+    }
+
+    .img_shadow {
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+      padding: 5px;
+      margin: 5px auto 35px;
+      width: 80%;
+    }
+
+    .img_shadow img {
+      width: 100%;
+    }
+
+    .box_shadow {
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+      padding-top: 10px;
+      margin-top: 50px;
+      border-radius: 15px;
+    }
+
+
+
+    /* <!--Customer Support--> */
+
+    @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+    .main-support-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 100px;
+      padding-top: 20px;
+      padding-bottom: 60px;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .support-container {
+      display: grid;
+      grid-template-columns: 350px 1fr;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(37, 37, 37);
+      border-radius: 50px;
+      padding: 20px 40px;
+      margin: 10px 60px;
+    }
+
+    .heading-customer-support {
+      font-family: 'Inter', sans-serif;
+      font-size: 30px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .customer-support-icon {
+      height: 150px;
+    }
+
+    .support-text {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 400;
+      font-size: 22px;
+      padding: 0px;
+      margin: 0px;
+      color: white;
+    }
+  </style>
+  
+
+
+  <div class="container">
+    <div class="px-md-5 py-md-4 p-2 mb-4 bg-white shadow " style="border-radius:20px">
+      <div class="row">
+        <div class="sh_center text-center" style="margin:2rem 0">
+          <div class="row align-items-center">
+            <div class="col-lg-4 col-md-4 col-sm-12" style="text-align:left">
+              <img src="images/logo.png" alt="logo" style="width:70%">
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12" style="text-align:right">
+              <span class="btn btn-primary"
+                style="border:1px solid transparent; padding:.390rem .75rem; font-size:1rem; line-height:1.5; border-radius:.25rem; background-color:#1695b4; border-color:#1695b4"><i
+                  class="fa fa-check" style="margin-right:9px"> <img src="images/white_tick.png"
+                    class="task_img">Community</span>
+              <span class="btn btn-primary"
+                style="border:1px solid transparent; padding:.390rem .75rem; font-size:1rem; line-height:1.5; border-radius:.25rem; background-color:#1695b4; border-color:#1695b4"><i
+                  class="fa fa-check" style="margin-right:9px"><img src="images/white_tick.png"
+                    class="task_img"></i>Enterprise</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="tab-content p-md-5 p-2 py-3" id="myTabContent">
+          <div aria-labelledby="overview-tab" class="tab-pane fade show active" id="overview" role="tabpanel">
+            <div class="position-relative mb-4" style="padding: 30px; margin-top:20px;">
+
+              <div class="p-lg-5 p-3 position-relative" style="background-color:rgb(242,243,244); border-radius: 30px;">
+
+                <div class="row">
+                  <div class="col-md-12" style="margin-top: 40px">
+                    <h4 align="center">Calls Feature, Auto-Format Phone Numbers & Managing Partners</h4>
+                    <h1 align="center">Phone Calls linked with Contact</h1>
+                    <h6 align="center">This app lets you manage Contacts by their Phone Number in
+                      a few simple clicks</h6>
+                    <div class="row my-3">
+
+                      <div class="ol-md-12">
+
+
+                        <div class="my-3" align="center" style="margin-top:100px">
+                          <p>In the settings, go to Phone Calls and select Phone Call Manager</p>
+                          <div class="img_shadow">
+                            <img src="photos/contact1.png" alt="image will be available shortly" class="img-fluid">
+                          </div>
+                        </div>
+
+                        <div class="my-3" align="center">
+                          <p>In Contacts the Phone Calls section is visible. Click on New to create a new Contact.
+                          </p>
+                          <p>Then click on Save</p>
+                          <div class="img_shadow">
+                            <img src="photos/contact2.png" alt="image will be available shortly" class="img-fluid">
+                          </div>
+                        </div>
+
+                        <div class="my-3" align="center">
+                          <p>Enter the details as required and then save.</p>
+                          <p>Note that the phone number is automatically saved in international format.</p>
+                          <div class="img_shadow">
+                            <img src="photos/contact3.png" alt="image will be available shortly" class="img-fluid">
+                          </div>
+                        </div>
+
+                        <div class="my-3" align="center">
+                          <p>From the Configuration menu go to Settings</p>
+                          <div class="img_shadow">
+                            <img src="photos/contact4.png" alt="image will be available shortly" class="img-fluid">
+                          </div>
+                        </div>
+
+                        <div class="my-3" align="center">
+                          <p>In the Phone Calls section, make sure to check on Partner.</p>
+                          <p>This enables the Phone Calls module to fetch Contact records from Partner.</p>
+                          <div class="img_shadow">
+                            <img src="photos/contact5.png" alt="image will be available shortly" class="img-fluid">
+                          </div>
+                        </div>
+
+                        <div class="my-3" align="center">
+                          <p>You can enter all the details including Phone Number in the form and save it.</p>
+                          <div class="img_shadow">
+                            <img src="photos/contact6.png" alt="image will be available shortly" class="img-fluid">
+                          </div>
+                        </div>
+
+                        <div class="my-3" align="center">
+                          <p>If a Contact with the same Phone Number as entered already exists in the Partner records, it will be fetched automatically.</p>
+                          <div class="img_shadow">
+                            <img src="photos/contact8.png" alt="image will be available shortly" class="img-fluid">
+                          </div>
+                        </div>
+
+                        <div class="my-3" align="center">
+                          <p>From the Configuration menu go to Settings and uncheck on Partner and then click on Save</p>
+                          <p>Note that after the above step the Contact records from Partner cannot be fetched.</p>
+                          <div class="img_shadow">
+                            <img src="photos/contact9.png" alt="image will be available shortly" class="img-fluid">
+                          </div>
+                        </div>
+
+                        <div class="my-3" align="center">
+                          <p>Click on Create Contact. This will open a wizard.</p>
+                          <div class="img_shadow">
+                            <img src="photos/contact10.png" alt="image will be available shortly" class="img-fluid">
+                          </div>
+                        </div>
+
+                        <div class="my-3" align="center">
+                          <p>Enter the details and click on Create.</p>
+                          <div class="img_shadow">
+                            <img src="photos/contact11.png" alt="image will be available shortly" class="img-fluid">
+                          </div>
+                        </div>
+
+                        <div class="my-3" align="center">
+                          <p>Record is created. To view all records click on Calls.</p>
+                          <div class="img_shadow">
+                            <img src="photos/contact12.png" alt="image will be available shortly" class="img-fluid">
+                          </div>
+                        </div>
+
+                        <div class="my-3" align="center">
+                          <p>Newly created record is visible</p>
+                          <div class="img_shadow">
+                            <img src="photos/contact13.png" alt="image will be available shortly" class="img-fluid">
+                          </div>
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h3
+                  style="color:#091E42; opacity:1; font-family:&quot;Montserrat&quot;; text-align:center; margin:auto; padding:25px; font-weight:600"
+                  class="oe_slogan">
+                  <span class="p-3" style="color:#0074ff; font-weight:600"></span>Features
+                </h3>
+                <div class="row" style="padding: 30px;">
+                  <div class="col-md-4 col-sm-6 mt48 mb-4">
+                    <div class="bg-white shadow" style="border-radius:10px; padding:25px; height:100%">
+                      <p class="text-center mb4" style="margin-top:-70px">
+                        <span class=""><img src="//apps.odoocdn.com/apps/assets/17.0/shopify_ept/Asset%201.png?a433d96"
+                            style="height:90px"></span>
+                      </p>
+                      <div class="text-center">
+                        <h5 style="color:#0e1e40; text-transform:capitalize" class="mb2 text-center">
+                          Fetching Contact Records by Phone Number
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 mt48 mb-4">
+                    <div class="bg-white shadow" style="border-radius:10px; padding:25px; height:100%">
+                      <p class="text-center mb4" style="margin-top:-70px">
+                        <span class=""><img src="//apps.odoocdn.com/apps/assets/17.0/shopify_ept/Asset%204.png?a433d96"
+                            style="height:90px"></span>
+                      </p>
+                      <div class="text-center">
+                        <h5 style="color:#0e1e40; text-transform:capitalize" class="mb2 text-center">
+                          Managing Contacts with ease
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 mt48 mb-4">
+                    <div class="bg-white shadow" style="border-radius:10px; padding:25px; height:100%">
+                      <p class="text-center mb4" style="margin-top:-70px">
+                        <span class=""><img src="//apps.odoocdn.com/apps/assets/17.0/shopify_ept/Asset%203.png?a433d96"
+                            style="height:90px"></span>
+                      </p>
+                      <div class="text-center">
+                        <h5 style="text-transform:capitalize; color:#0e1e40" class="mb2 text-center">
+                          Phone Number Auto-saved in international format
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+
+
+
+              <!--   why technians tab-->
+
+
+              <div class="tab-pane fade show py-1" id="why-technians" role="tabpanel"
+                aria-labelledby="why-technians-tab" style="padding: 30px; margin-top: 20px;">
+                <div class="p-3 p-lg-5 mb-4" style="background-color:#FAFAFA; border-radius:30px">
+                  <h5
+                    style="font-family:'Inter', sans-serif; font-weight:600; font-size:calc(0.93rem + 1vw); line-height:155.19%; color:#252525; text-align:center">
+                    Why
+                    Technians
+                  </h5>
+                  <p class="text-center" style="font-weight: 100px; padding:40px;"> We excel in crafting customized Odoo
+                    solutions to meet the unique needs of our clients. Our developers work closely with businesses to
+                    understand their requirements and develop modules, applications, and workflows that seamlessly
+                    integrate
+                    with the Odoo framework.
+                    Our team has the expertise to ensure a smooth and efficient integration process.We focus on
+                    enhancing
+                    functionality and optimizing performance.
+                    . Our agency offers comprehensive training sessions and consultations to empower your team with the
+                    knowledge and skills needed to leverage Odoo's full potential.
+
+
+                  </p>
+                </div>
+              </div>
+              <div class="tab-pane fade show py-1" id="support" role="tabpanel" aria-labelledby="support-tab"
+                style="padding: 30px; margin-top: 20px;">
+                <div class="p-3 p-lg-5 mb-4" style="background-color:#FAFAFA; border-radius:30px">
+                  <div class="row "
+                    style="background-color:#f1f7fc; flex-direction: column;flex-wrap: wrap;align-content: space-around;">
+                    <div class="col-md-6 pb-4  d-flex">
+                      <div style="padding:30px; flex-direction: column;flex-wrap: wrap;align-content: space-around;">
+                        <div class="d-flex">
+                          <a href="https://apps.technians.com/helpdesk-support-ticket/">
+                            <img
+                              src="//apps.odoocdn.com/apps/assets/17.0/ohrms_core/assets/images/support%20(3).png?3194f3f"
+                              alt="" width="80px" style="margin-right:12px">
+                          </a>
+                          <div style="padding:0px 8px">
+                            <span style="color:#1695b4; font-size:24px; font-weight:600; padding-bottom:1rem">Need
+                              Help?</span>
+                            <p class="m-0" style="color:#718096">Got
+                              questions or need help? Get in touch.</p>
+                            <div style="font-weight:400;color:#718096;"><span><a
+                                  href="https://apps.technians.com/helpdesk-support-ticket/"><img
+                                    src="//apps.odoocdn.com/apps/assets/17.0/ohrms_core/assets/images/support-email.svg?3194f3f"
+                                    alt="" width="18px" style="margin-right:0.8rem"></a></span>support@technians.com
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+
+              </div>
+              <div class="tab-pane fade show py-1" id="faq" role="tabpanel" aria-labelledby="faqs-tab"
+                style="padding: 30px; margin-top: 20px;">
+                <div class="p-3 p-lg-5" style="background-color:#FAFAFA; border-radius:30px">
+                  <div class="accordion" id="accordionPanelsStayOpenExample"
+                    style="padding:50px;background-color: #FAFAFA; border-radius: 30px;">
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                          aria-controls="panelsStayOpen-collapseOne">
+                          What is the display format of the phone number ?
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                        aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                          <strong>The Phone Number is displayed in a standerdized International format.</strong>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseTwo">
+                          Is there a limit to the number of call records the app can handle ?
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                          <strong>The app is designed to handle a large number of call records and there is no strict
+                            limit imposed. However, the actual capacity may depend on your device's storage
+                            capacity.</strong>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="tab-pane fade show py-1" id="releases" role="tabpanel" aria-labelledby="releases-tab">
+                  <div class="p-3 p-lg-5"
+                    style="background-color:#FAFAFA; border-radius:30px; padding: 30px; margin-top: 20px;">
+                    <p></p>Version 16.0</p>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+            crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>
